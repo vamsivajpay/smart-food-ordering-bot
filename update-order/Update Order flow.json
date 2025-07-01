@@ -1,0 +1,1005 @@
+{
+  "flow": {
+    "flow": {
+      "flowId": "dc5c1b57-a4c0-4382-81ea-3a3a1566eb07",
+      "displayName": "Update Order",
+      "transitionEvents": [ {
+        "triggerIntentId": "b8f8a87c-d329-4149-a38c-1a6ea36f6785",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Sure,please provide your order number."
+                    } ]
+                  }
+                } ]
+              } ]
+            },
+            "playbackInterruptionSettings": {
+            
+            },
+            "dtmfSettings": {
+              "useSystemEntityRule": false
+            }
+          },
+          "targetPageId": "69da4083-305f-415f-9c6e-6ec866fb430c"
+        },
+        "name": "77014574-672d-4d3f-a8a5-8b8b6e808adb",
+        "description": "This Route will be activated after the intent of the user to update the order is identified."
+      } ],
+      "modelIdentifier": {
+        "modelId": "a8a42f03-e557-4937-9245-82082708021b"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "7dc1237f-a737-44bf-8d89-931a95ee14a1"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "635cb2b9-9065-4f15-ac49-c1c6c91a35f2"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_ADVANCED",
+        "customConfigKey": "15678411-38b5-4695-8436-f9969dae5df4"
+      },
+      "etag": "67dd4ccd",
+      "nluSettingsMapping": [ {
+        "key": "en",
+        "value": {
+          "classificationThreshold": 0.30000001,
+          "modelType": "MODEL_TYPE_ADVANCED",
+          "customConfigKey": "15678411-38b5-4695-8436-f9969dae5df4",
+          "languageCode": "en"
+        }
+      } ]
+    },
+    "intents": [ {
+      "meta": {
+        "id": "713491e4-ed9d-4678-a7af-4f2a3a09733d",
+        "displayName": "confirmation.no",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "currency-name",
+          "displayName": "currency-name",
+          "value": "$currency-name",
+          "entityTypeDisplayName": "@sys.currency-name"
+        }, {
+          "id": "geo-city",
+          "displayName": "geo-city",
+          "value": "$geo-city",
+          "entityTypeDisplayName": "@sys.geo-city"
+        } ],
+        "description": "This intent is triggered when user says no.",
+        "etag": "67d12c6c",
+        "skipAutoAnnotation": true
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "No, that's not right",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "No, I don't want to do that",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "No, thank you",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Nope",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Nah",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "No"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "b8f8a87c-d329-4149-a38c-1a6ea36f6785",
+        "displayName": "update.order",
+        "priority": 500000,
+        "description": "This intent is triggered when the customer wants to update the order or make some changes to the order.",
+        "etag": "67d149a4"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I would like to remove something from the order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I would like to order something more"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Update the order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Dont take the order, I want to make some changes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Dont confirm it, I want to remove something from the order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Dont confirm it, I want to add something more"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "is it possible to change my order?"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I want to delete some food items"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I want to add some food items"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I want to eliminate something from my order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I want to remove some menu from my order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I want to remove some from my order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "i want to add things in my order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "i want to make changes in my order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Wait, update my order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Hi, actually i want to update my order"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "477dade8-b08c-4897-ac1f-7dc7afbc2542",
+        "displayName": "confirmation.yes",
+        "priority": 500000,
+        "description": "This intent is triggered when user says yes",
+        "etag": "67d9341a"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "okay"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "sure"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "ok"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Indeed",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Absolutely",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "That's right",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "correct"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yup"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Yeah"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Yes"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Default Negative Intent",
+        "priority": 500000,
+        "isFallback": true
+      }
+    } ],
+    "entities": [ {
+      "id": "3249640e-0007-492d-aa35-f311796b6918",
+      "displayName": "placeorder_items",
+      "kind": "KIND_MAP",
+      "entries": [ {
+        "value": "Pasta",
+        "synonyms": [ "pasta", "Pasta" ],
+        "lang": "en"
+      }, {
+        "value": "French fries",
+        "synonyms": [ "chips", "french fries", "French fries", "fried potatoes", "fries", "Fries", "potato fries" ],
+        "lang": "en"
+      }, {
+        "value": "Coke",
+        "synonyms": [ "Coca-Cola", "Coca-Cola Classic", "coke", "Coke", "Coke Zero", "Diet Coke", "Regular Coke" ],
+        "lang": "en"
+      }, {
+        "value": "Pizza",
+        "synonyms": [ "pizza", "Pizza", "pizza delivery", "pizza order" ],
+        "lang": "en"
+      }, {
+        "value": "Burger",
+        "synonyms": [ "burger", "Burger" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "aa2ec3fd-c200-4813-9b74-f18152b57949",
+      "displayName": "order_no",
+      "kind": "KIND_REGEXP",
+      "entries": [ {
+        "value": "\\d{6}",
+        "synonyms": [ "\\d{6}" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    }, {
+      "id": "d0597706-93d2-4011-92d4-b12a9fb43ca2",
+      "displayName": "quantity",
+      "kind": "KIND_REGEXP",
+      "entries": [ {
+        "value": "\\d{3}",
+        "synonyms": [ "\\d{3}" ],
+        "lang": "en"
+      } ],
+      "nluSettings": {
+      
+      }
+    } ],
+    "pages": [ {
+      "key": "69da4083-305f-415f-9c6e-6ec866fb430c",
+      "value": {
+        "displayName": "Order Number",
+        "onLoad": {
+          "playbackInterruptionSettings": {
+          
+          },
+          "dtmfSettings": {
+            "useSystemEntityRule": false
+          }
+        },
+        "slots": [ {
+          "displayName": "order_no",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@order_no",
+            "classType": "ENUMERATION",
+            "enumerationId": "aa2ec3fd-c200-4813-9b74-f18152b57949"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            },
+            "repromptEvents": [ {
+              "event": "sys.no-match-1",
+              "handler": {
+                "beforeTransition": {
+                  "staticUserResponse": {
+                    "candidates": [ {
+                      "selector": {
+                        "platform": [ "PLATFORM_UNSPECIFIED" ],
+                        "lang": "en"
+                      },
+                      "responses": [ {
+                        "text": {
+                          "variants": [ {
+                            "text": "please provide 6-digited, order id"
+                          } ]
+                        }
+                      } ]
+                    } ]
+                  },
+                  "playbackInterruptionSettings": {
+                  
+                  },
+                  "dtmfSettings": {
+                    "useSystemEntityRule": false
+                  }
+                },
+                "targetPageId": "69da4083-305f-415f-9c6e-6ec866fb430c"
+              },
+              "name": "58843f77-2c5c-493a-8263-98ba809a3f7d"
+            } ]
+          },
+          "description": "The order number is a unique number which represents a order."
+        } ],
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "FINAL" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "function": {
+                "name": "validate_order",
+                "webhookFulfillmentId": "c63f4b6b-e79f-4398-8a1b-e099ab772ab5"
+              },
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            },
+            "targetPageId": "96cf256d-b943-4670-aed1-eec359d2719e"
+          },
+          "name": "1fe14a58-8e99-4a92-8a6e-15de2926c415",
+          "conditionString": "$page.params.status = \"FINAL\""
+        }, {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$session"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "order_no"
+                  } ]
+                }
+              },
+              "rhs": {
+                "value": "null"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "setParameterActions": [ {
+                "parameter": "order_no",
+                "value": null
+              } ],
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            }
+          },
+          "name": "cb027e91-b24f-4d51-825d-6c6c5803a300",
+          "conditionString": "$session.params.order_no = null"
+        } ],
+        "etag": "67e18897",
+        "description": "This page will ask the customer for their order number."
+      }
+    }, {
+      "key": "96cf256d-b943-4670-aed1-eec359d2719e",
+      "value": {
+        "displayName": "Updating order ",
+        "onLoad": {
+          "playbackInterruptionSettings": {
+          
+          },
+          "dtmfSettings": {
+            "useSystemEntityRule": false
+          }
+        },
+        "slots": [ {
+          "displayName": "item_name",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@placeorder_items",
+            "classType": "ENUMERATION",
+            "enumerationId": "3249640e-0007-492d-aa35-f311796b6918"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Please provide the name of the item you want to order"
+                      } ]
+                    }
+                  } ]
+                }, {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "payload": {
+                      "richContent": [ [ {
+                        "options": [ {
+                          "style": {
+                            "backgroundColor": "#FFD700"
+                          },
+                          "text": "Pizza"
+                        }, {
+                          "style": {
+                            "backgroundColor": "#FFD700"
+                          },
+                          "text": "Pasta"
+                        }, {
+                          "style": {
+                            "backgroundColor": "#FFD700"
+                          },
+                          "text": "Fries"
+                        }, {
+                          "style": {
+                            "backgroundColor": "#FFD700"
+                          },
+                          "text": "Coke"
+                        } ],
+                        "type": "chips"
+                      } ] ]
+                    }
+                  } ]
+                } ]
+              },
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            },
+            "repromptEvents": [ {
+              "event": "sys.no-match-1",
+              "handler": {
+                "beforeTransition": {
+                  "staticUserResponse": {
+                    "candidates": [ {
+                      "selector": {
+                        "platform": [ "PLATFORM_UNSPECIFIED" ],
+                        "lang": "en"
+                      },
+                      "responses": [ {
+                        "text": {
+                          "variants": [ {
+                            "text": "please select anyone of the items from above"
+                          } ]
+                        }
+                      } ]
+                    } ]
+                  },
+                  "playbackInterruptionSettings": {
+                  
+                  },
+                  "dtmfSettings": {
+                    "useSystemEntityRule": false
+                  }
+                }
+              },
+              "name": "dd75b331-2671-40b6-8be8-4fcf312f31d5"
+            } ]
+          },
+          "description": "This parameter captures the name of the item that the customer wants to order."
+        }, {
+          "displayName": "quantity_item",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@quantity",
+            "classType": "ENUMERATION",
+            "enumerationId": "d0597706-93d2-4011-92d4-b12a9fb43ca2"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Please tell the quantity of $session.params.item_name,  you would like to order"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            }
+          },
+          "description": "The parameter captures the quantity of the item that the customer wants to order. "
+        } ],
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "FINAL" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            },
+            "targetPageId": "b106f4f3-fa5d-4993-be08-f7b35ea88512"
+          },
+          "name": "8e085e97-7f8a-45bf-bc8f-41da272feed8",
+          "conditionString": "$page.params.status = \"FINAL\""
+        }, {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$session"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "order_no"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "null" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "setParameterActions": [ {
+                "parameter": "order_no",
+                "value": null
+              } ],
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            },
+            "targetPageId": "69da4083-305f-415f-9c6e-6ec866fb430c"
+          },
+          "name": "c485610a-df8f-4081-b685-ad5e6b26dda6",
+          "conditionString": "$session.params.order_no = \"null\""
+        } ],
+        "etag": "67e18a5c",
+        "description": "This page will take the input details from the customer and update the order accordingly."
+      }
+    }, {
+      "key": "b106f4f3-fa5d-4993-be08-f7b35ea88512",
+      "value": {
+        "displayName": "Order confirmation",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "So, you would like to order $session.params.quantity_item $session.params.item_name(s). Should I go ahead and confirm your order?"
+                  } ]
+                }
+              } ]
+            } ]
+          },
+          "playbackInterruptionSettings": {
+          
+          },
+          "dtmfSettings": {
+            "useSystemEntityRule": false
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "477dade8-b08c-4897-ac1f-7dc7afbc2542",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Your order has been successfully updated and placed. Thank you for your confirmation"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "function": {
+                "name": "update_order",
+                "webhookFulfillmentId": "11d0ec7c-6a55-4240-9e3f-71c2efdb01b4"
+              },
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            },
+            "targetPageId": "END_SESSION"
+          },
+          "name": "ea1a0566-05dc-462c-bc25-e561b9760369"
+        }, {
+          "triggerIntentId": "713491e4-ed9d-4678-a7af-4f2a3a09733d",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Thank you for letting me know. Your order has not been confirmed. This session will now be ended."
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "playbackInterruptionSettings": {
+              
+              },
+              "dtmfSettings": {
+                "useSystemEntityRule": false
+              }
+            },
+            "targetPageId": "END_SESSION"
+          },
+          "name": "24591861-52a2-4ced-a911-f2964bbcf64a"
+        } ],
+        "etag": "67dc4eb4"
+      }
+    } ],
+    "fulfillments": [ {
+      "key": "11d0ec7c-6a55-4240-9e3f-71c2efdb01b4",
+      "value": {
+        "id": "11d0ec7c-6a55-4240-9e3f-71c2efdb01b4",
+        "name": "updateorder.webhook",
+        "webhook": {
+          "url": "https://webhook-test1-311620405419.us-central1.run.app",
+          "webhookTimeout": 10,
+          "webhookType": "STANDARD",
+          "encryptedUsername": "ARaR7SaezN354RkZyOGThifbzORaVt7MBr0Jlgqb/b9i",
+          "encryptedPassword": "ARaR7Sa3xVA7ktKudgXjyoilA+ol5ZVaT5huZ23Z1Lwy"
+        },
+        "etag": "67dc4e65"
+      }
+    }, {
+      "key": "c63f4b6b-e79f-4398-8a1b-e099ab772ab5",
+      "value": {
+        "id": "c63f4b6b-e79f-4398-8a1b-e099ab772ab5",
+        "name": "validate.orderno_webhook",
+        "webhook": {
+          "url": "https://webhook-test1-311620405419.us-central1.run.app",
+          "webhookTimeout": 5,
+          "webhookType": "STANDARD",
+          "encryptedUsername": "ARaR7SaM5Q1KlxkOo6te7/hOZO43K1e0GlLKukSzap/k",
+          "encryptedPassword": "ARaR7SYWALVMYiY9hEm1H8AKcyuOAcy2d7PhWArwIl1A"
+        },
+        "etag": "67da96e0"
+      }
+    } ],
+    "webhooks": [ {
+      "key": "11d0ec7c-6a55-4240-9e3f-71c2efdb01b4",
+      "value": {
+        "name": "projects/-/locations/-/agents/-/webhooks/11d0ec7c-6a55-4240-9e3f-71c2efdb01b4",
+        "displayName": "updateorder.webhook",
+        "genericWebService": {
+          "uri": "https://webhook-test1-311620405419.us-central1.run.app",
+          "webhookType": "STANDARD"
+        },
+        "timeout": {
+          "seconds": 10
+        },
+        "etag": "67dc4e65"
+      }
+    }, {
+      "key": "c63f4b6b-e79f-4398-8a1b-e099ab772ab5",
+      "value": {
+        "name": "projects/-/locations/-/agents/-/webhooks/c63f4b6b-e79f-4398-8a1b-e099ab772ab5",
+        "displayName": "validate.orderno_webhook",
+        "genericWebService": {
+          "uri": "https://webhook-test1-311620405419.us-central1.run.app",
+          "webhookType": "STANDARD"
+        },
+        "timeout": {
+          "seconds": 5
+        },
+        "etag": "67da96e0"
+      }
+    } ]
+  }
+}
