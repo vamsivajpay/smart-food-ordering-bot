@@ -1,4 +1,4 @@
-📁 Project Materials
+-- Project Documents--
 This folder contains key reference documents for the Food Ordering Bot built using Google Dialogflow:
 
 Project Presentation (PPT): Summarizes the bot's concept, features, and implementation strategy.
