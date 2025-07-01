@@ -1,4 +1,4 @@
-# 🍽️ Food Ordering Bot – Google Dialogflow
+# Food Ordering Bot – Google Dialogflow
 
 An elegant, AI-driven chatbot for effortless food ordering, built with Google Dialogflow. Users can place, update, or cancel food orders naturally—via voice or text—delivering a seamless, automated solution for restaurants and food services.
 
